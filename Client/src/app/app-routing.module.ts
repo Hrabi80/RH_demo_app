@@ -68,7 +68,7 @@ const routes: Routes = [
       { path: "tables", component: TablesComponent },
       { path: "maps", component: MapsComponent },
     ],
-    canActivate : [AuthGuard]
+   // canActivate : [AuthGuard]
   },
 
   // Volunteer views

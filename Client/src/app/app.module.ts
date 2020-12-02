@@ -89,6 +89,8 @@ import { HelpComponent } from './_Volunteer/help/help.component';
 import { SRHSideComponent } from './Utils/srh-side/srh-side.component';
 import { RHSideComponent } from './Utils/rh-side/rh-side.component';
 import { EMPSideComponent } from './Utils/emp-side/emp-side.component';
+import { UsersComponent } from './_SuperRH/users/users.component';
+import { DocRequestsComponent } from './_RH/doc-requests/doc-requests.component';
 
 @NgModule({
   declarations: [
@@ -158,6 +160,8 @@ import { EMPSideComponent } from './Utils/emp-side/emp-side.component';
     SRHSideComponent,
     RHSideComponent,
     EMPSideComponent,
+    UsersComponent,
+    DocRequestsComponent,
   ],
      
     

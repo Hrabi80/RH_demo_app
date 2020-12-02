@@ -86,6 +86,9 @@ import { CardProfComponent } from './components/cards/card-prof/card-prof.compon
 import { OtherDonationListComponent } from './_Volunteer/other-donation-list/other-donation-list.component';
 import { CardOtherDonationComponent } from './components/cards/card-other-donation/card-other-donation.component';
 import { HelpComponent } from './_Volunteer/help/help.component';
+import { SRHSideComponent } from './Utils/srh-side/srh-side.component';
+import { RHSideComponent } from './Utils/rh-side/rh-side.component';
+import { EMPSideComponent } from './Utils/emp-side/emp-side.component';
 
 @NgModule({
   declarations: [
@@ -152,6 +155,9 @@ import { HelpComponent } from './_Volunteer/help/help.component';
     OtherDonationListComponent,
     CardOtherDonationComponent,
     HelpComponent,
+    SRHSideComponent,
+    RHSideComponent,
+    EMPSideComponent,
   ],
      
     

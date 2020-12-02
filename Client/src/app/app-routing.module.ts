@@ -27,6 +27,15 @@ import { AddEventComponent } from "./_Association/event/add-event/add-event.comp
 
 import { WelcomeComponent } from './_Public/welcome/welcome.component';
 
+//SuperRH
+import { SRHSideComponent } from './Utils/srh-side/srh-side.component';
+
+//RH
+import {RHSideComponent } from './Utils/rh-side/rh-side.component';
+
+
+//EMPLOYEE
+import { EMPSideComponent } from './Utils/emp-side/emp-side.component';
 
 // Association
 import { AddBloodDonationComponent } from "./_Association/blood/add-blood-donation/add-blood-donation.component"
@@ -52,6 +61,27 @@ const routes: Routes = [
   {path:"login",component:LoginComponent},
   // Association views
  
+
+
+
+  //Super RH
+  { path: "SRH_Dashboard", 
+    component: SRHSideComponent,
+    children: [
+      { path: "add_blood", component: AddBloodDonationComponent },
+      { path: "blood_list", component: BloodListVComponent },
+      { path: "add_event", component: AddEventComponent },
+      { path: "event_list", component: ListeEventComponent },
+      { path: "add_need", component: AddNeedComponent },
+      { path: "need_list", component: ListNeedComponent },
+      { path: "dashboard", component: DashboardComponent },
+      { path: "add_blood", component: AddBloodDonationComponent },
+      { path: "settings", component: SettingsComponent },
+      { path: "tables", component: TablesComponent },
+      { path: "maps", component: MapsComponent },
+    ],},
+  // RH
+  // Employees  
   // admin views
   { path: "dash", 
     component: MysideComponent,

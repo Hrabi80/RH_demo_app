@@ -1,0 +1,14 @@
+
+.icon-background {
+    color: #f8ef6d;
+}
+.circle-icon {
+    background: #fae06c;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    vertical-align: middle;
+    padding: 20px;
+}

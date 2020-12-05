@@ -1,0 +1,40 @@
+<div
+  class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg"
+>
+  <div class="flex-auto p-4">
+    <div class="flex flex-wrap">
+      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+        <h5 class="text-gray-500 uppercase font-bold text-xs">
+          Last request : 06/01/2020
+        </h5>
+        <span class="font-semibold text-xl text-gray-800">
+          Salary certificate
+        </span>
+      </div>
+      
+      
+      <span class="fa-stack fa-3x">
+        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+        <i class="fas fa-dollar-sign fa-stack-1x"></i>
+      </span>
+    </div>
+    <p class="text-sm text-gray-500 mt-4">
+      <span class="mr-2" [ngClass]="statPercentColor">
+        <i
+          [ngClass]="
+            statArrow === 'up' ? 'fas fa-arrow-up' : 'fas fa-arrow-down'
+          "
+        ></i>
+        
+      </span>
+      <span class="whitespace-no-wrap">
+        <button routerLink="/SRH_Dashboard/add_user/"
+        class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        type="button"
+      >
+        Request now
+      </button>
+      </span>
+    </p>
+  </div>
+</div>

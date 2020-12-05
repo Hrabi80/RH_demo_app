@@ -1,0 +1,13 @@
+.containerRh{
+  width: 50%;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.containerEmp{
+  width: 90%;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+app-admin{
+  margin-bottom: 10px !important;
+}

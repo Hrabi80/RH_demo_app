@@ -89,8 +89,28 @@ import { HelpComponent } from './_Volunteer/help/help.component';
 import { SRHSideComponent } from './Utils/srh-side/srh-side.component';
 import { RHSideComponent } from './Utils/rh-side/rh-side.component';
 import { EMPSideComponent } from './Utils/emp-side/emp-side.component';
-import { UsersComponent } from './_SuperRH/users/users.component';
+import { UsersComponent } from './_SuperRH/user/users/users.component';
 import { DocRequestsComponent } from './_RH/doc-requests/doc-requests.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//angular material
+import { MatExpansionModule } from '@angular/material/expansion';
+
+import { from } from 'rxjs';
+import { UlistComponent } from './_SuperRH/user/ulist/ulist.component';
+import { AdduComponent } from './_SuperRH/user/addu/addu.component';
+import { AllRequestsComponent } from './_SuperRH/all-requests/all-requests.component';
+import { MeetsComponent } from './_SuperRH/meets/meets.component';
+import { CalendarComponent } from './_SuperRH/calendar/calendar.component';
+import { MessagesComponent } from './_SuperRH/messages/messages.component';
+import { HomeComponent } from './_EMP/home/home.component';
+import { SalaryComponent } from './Utils/requests_cards/salary/salary.component';
+import { AttendanceComponent } from './Utils/requests_cards/attendance/attendance.component';
+import { WorkComponent } from './Utils/requests_cards/work/work.component';
+import { ChangeComponent } from './Utils/requests_cards/change/change.component';
+import { AbsenceComponent } from './Utils/requests_cards/absence/absence.component';
+import { OtherComponent } from './Utils/requests_cards/other/other.component';
+import { PendingComponent } from './_EMP/pending/pending.component';
 
 @NgModule({
   declarations: [
@@ -162,6 +182,20 @@ import { DocRequestsComponent } from './_RH/doc-requests/doc-requests.component'
     EMPSideComponent,
     UsersComponent,
     DocRequestsComponent,
+    UlistComponent,
+    AdduComponent,
+    AllRequestsComponent,
+    MeetsComponent,
+    CalendarComponent,
+    MessagesComponent,
+    HomeComponent,
+    SalaryComponent,
+    AttendanceComponent,
+    WorkComponent,
+    ChangeComponent,
+    AbsenceComponent,
+    OtherComponent,
+    PendingComponent,
   ],
      
     
@@ -170,7 +204,9 @@ import { DocRequestsComponent } from './_RH/doc-requests/doc-requests.component'
     // ReactiveFormsModule,
      FormsModule,
      AppRoutingModule,
-     ReactiveFormsModule,],
+     ReactiveFormsModule,
+     MatExpansionModule,
+     BrowserAnimationsModule,],
   providers: [ 
     AuthGuard,
     JwtInterceptor,

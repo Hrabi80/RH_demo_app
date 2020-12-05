@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./srh-side.component.css']
 })
 export class SRHSideComponent implements OnInit {
+  $:any;
   collapseShow = "hidden";
   constructor() { }
 

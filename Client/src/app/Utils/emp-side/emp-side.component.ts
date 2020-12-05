@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./emp-side.component.css']
 })
 export class EMPSideComponent implements OnInit {
-
+  collapseShow = "hidden";
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {}
+  toggleCollapseShow(classes) {
+    this.collapseShow = classes;
   }
 
 }

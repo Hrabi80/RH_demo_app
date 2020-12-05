@@ -23,12 +23,16 @@ import { AuthGuard } from './_helper/auth.guard';
 import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
-import { AddEventComponent } from "./_Association/event/add-event/add-event.component";
 
 import { WelcomeComponent } from './_Public/welcome/welcome.component';
 
 //SuperRH
 import { SRHSideComponent } from './Utils/srh-side/srh-side.component';
+import { UsersComponent } from './_SuperRH/user/users/users.component';
+import { AdduComponent } from './_SuperRH/user/addu/addu.component';
+import { AllRequestsComponent } from './_SuperRH/all-requests/all-requests.component';
+import { MeetsComponent } from './_SuperRH/meets/meets.component';
+import { CalendarComponent } from './_SuperRH/calendar/calendar.component';
 
 //RH
 import {RHSideComponent } from './Utils/rh-side/rh-side.component';
@@ -36,14 +40,16 @@ import {RHSideComponent } from './Utils/rh-side/rh-side.component';
 
 //EMPLOYEE
 import { EMPSideComponent } from './Utils/emp-side/emp-side.component';
+import { HomeComponent } from './_EMP/home/home.component';
+import { PendingComponent } from './_EMP/pending/pending.component';
 
 // Association
 import { AddBloodDonationComponent } from "./_Association/blood/add-blood-donation/add-blood-donation.component"
 import { MysideComponent } from "./components/myside/myside.component";
-import { BloodListVComponent } from "./_Association/blood/blood-list-v/blood-list-v.component"
 import { ListeEventComponent } from "./_Association/event/liste-event/liste-event.component"
 import { AddNeedComponent } from "./_Association/needs/add-need/add-need.component";
 import { ListNeedComponent } from "./_Association/needs/list-need/list-need.component";
+import { MessagesComponent } from "./_SuperRH/messages/messages.component";
 
 //Volunteer
 import { ListBloodComponent } from "./_Volunteer/blood/list-blood/list-blood.component";
@@ -66,29 +72,37 @@ const routes: Routes = [
 
   //Super RH
   { path: "SRH_Dashboard", 
-    component: SRHSideComponent,
+    component: EMPSideComponent,
     children: [
-      { path: "add_blood", component: AddBloodDonationComponent },
-      { path: "blood_list", component: BloodListVComponent },
-      { path: "add_event", component: AddEventComponent },
-      { path: "event_list", component: ListeEventComponent },
-      { path: "add_need", component: AddNeedComponent },
-      { path: "need_list", component: ListNeedComponent },
-      { path: "dashboard", component: DashboardComponent },
+      { path: "users_list", component: UsersComponent },
+      { path: "add_user", component: AdduComponent },
+      { path: "all_requests", component: AllRequestsComponent },
+      { path: "meeting", component: MeetsComponent },
+      { path: "calendar", component: CalendarComponent },
+      { path: "messages", component: MessagesComponent },
+     
+    ],},
+  // RH
+  // Employees 
+  { path: "EMP_Dash", 
+    component: EMPSideComponent,
+    children: [
+      { path: "home", component: HomeComponent },
+      { path: "pending", component: PendingComponent },
+      { path: "all_requests", component: AllRequestsComponent },
+      { path: "meeting", component: MeetsComponent },
+      { path: "calendar", component: CalendarComponent },
+      { path: "messages", component: MessagesComponent },
       { path: "add_blood", component: AddBloodDonationComponent },
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
       { path: "maps", component: MapsComponent },
-    ],},
-  // RH
-  // Employees  
+    ],}, 
   // admin views
   { path: "dash", 
     component: MysideComponent,
     children: [
       { path: "add_blood", component: AddBloodDonationComponent },
-      { path: "blood_list", component: BloodListVComponent },
-      { path: "add_event", component: AddEventComponent },
       { path: "event_list", component: ListeEventComponent },
       { path: "add_need", component: AddNeedComponent },
       { path: "need_list", component: ListNeedComponent },
